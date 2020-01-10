@@ -1,0 +1,32 @@
+.menu-wrapper {
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #2a394f;
+  color: #fff;
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: text-indent 0.15s, height 0.3s;
+    h2 {
+      color: #eff4fa;
+      font-size: 13px;
+      font-weight: 500;
+      margin: 0 0 4px 15px;
+      letter-spacing: 1px;
+      flex: 2;
+    }
+    &:hover {
+      background: #212e41;
+      text-indent: 4px;
+    }
+    &:not(:last-child):hover {
+      border-bottom: 2px solid #355789;
+    }
+  }
+}
