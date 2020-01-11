@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 
-import MenuItems from "./components/MenuItems/MenuItems";
+import DropdownItem from "./components/DropdownItem/DropdownItem";
 
 function App() {
   return (
     <div className="App">
-      <MenuItems />
+      <DropdownItem />
     </div>
   );
 }

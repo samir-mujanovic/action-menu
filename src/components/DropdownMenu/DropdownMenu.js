@@ -10,7 +10,7 @@ const DropdownMenu = () => {
                     {
                         menuItemsList.map((item, index) => {
                             return (
-                                <div className="dropdown-items">
+                                <div className="dropdown-items" key={index}>
                                     <div>
                                         <span>{item.icon}</span>
                                         {item.title}

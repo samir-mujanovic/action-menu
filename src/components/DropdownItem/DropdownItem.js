@@ -5,9 +5,9 @@ import DropdownMenu from '../DropdownMenu/DropdownMenu'
 
 import {FaAngleUp, FaAngleDown, FaAddressCard} from "react-icons/fa";
 
-import "./MenuItems.styles.scss";
+import "./DropdownItem.styles.scss";
 
-const MenuItems = () => {
+const DropdownItem = () => {
     const node = useRef();
 
     const [open, setOpen] = useState(false);
@@ -60,4 +60,4 @@ const MenuItems = () => {
     );
 };
 
-export default MenuItems;
+export default DropdownItem;
