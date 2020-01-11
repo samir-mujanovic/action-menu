@@ -2,9 +2,10 @@
   width: 300px;
   height: auto;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 6px;
   background: #2a394f;
   color: #fff;
+  position: relative;
   .menu-item {
     display: flex;
     align-items: center;
@@ -13,6 +14,7 @@
     border-bottom: 2px solid transparent;
     cursor: pointer;
     transition: text-indent 0.15s, height 0.3s;
+    position: relative;
     h2 {
       color: #eff4fa;
       font-size: 13px;
