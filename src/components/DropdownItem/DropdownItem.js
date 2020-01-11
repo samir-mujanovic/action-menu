@@ -38,9 +38,9 @@ const DropdownItem = () => {
                     {({ref}) => (
                         <div className="menu-wrapper">
                             <div className="menu-item" onClick={toggleHandler} ref={ref}>
-                                <div><FaAddressCard/></div>
+                                <div className="icons"><FaAddressCard/></div>
                                 <h2>Dashboard</h2>
-                                <div>
+                                <div className="icons">
                                     {open === true ?
                                         <FaAngleUp style={{color: '#14a3f9'}}/>
                                         :

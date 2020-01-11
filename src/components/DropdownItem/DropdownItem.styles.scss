@@ -18,11 +18,14 @@
     -ms-transition:     text-indent 0.15s, height 0.3s;
     transition:         text-indent 0.15s, height 0.3s;
     position: relative;
+    .icons{
+      display: flex;
+    }
     h2 {
       color: #eff4fa;
       font-size: 13px;
       font-weight: 500;
-      margin: 0 0 4px 15px;
+      margin-left: 15px;
       letter-spacing: 1px;
       flex: 2;
     }
