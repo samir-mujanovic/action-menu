@@ -16,11 +16,15 @@
         font-size: 13px;
         letter-spacing: 1px;
         font-weight: 500;
-        transition: box-shadow .2s linear,text-indent .3s linear;
+        -webkit-transition: box-shadow .2s linear,text-indent .3s linear;
+        -moz-transition:    box-shadow .2s linear,text-indent .3s linear;
+        -o-transition:      box-shadow .2s linear,text-indent .3s linear;
+        -ms-transition:     box-shadow .2s linear,text-indent .3s linear;
+        transition:         box-shadow .2s linear,text-indent .3s linear;
         cursor: pointer;
         &:hover{
           background: #0c93e4;
-          box-shadow: 3px 0px #126CA1 inset;
+          box-shadow: 3px 0 #126CA1 inset;
           text-indent: 31px;
         }
         span{

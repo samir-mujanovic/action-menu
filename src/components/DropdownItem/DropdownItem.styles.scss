@@ -12,7 +12,11 @@
     padding: 25px;
     border-bottom: 2px solid transparent;
     cursor: pointer;
-    transition: text-indent 0.15s, height 0.3s;
+    -webkit-transition: text-indent 0.15s, height 0.3s;
+    -moz-transition:    text-indent 0.15s, height 0.3s;
+    -o-transition:      text-indent 0.15s, height 0.3s;
+    -ms-transition:     text-indent 0.15s, height 0.3s;
+    transition:         text-indent 0.15s, height 0.3s;
     position: relative;
     h2 {
       color: #eff4fa;
