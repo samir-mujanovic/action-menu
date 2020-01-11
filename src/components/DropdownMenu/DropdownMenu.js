@@ -2,6 +2,8 @@ import React from "react";
 import menuItemsList from "../../constants/menuItemsList";
 import {Popper} from "react-popper";
 
+import './DropdownMenu.styles.scss'
+
 const DropdownMenu = () => {
     return (
         <Popper placement="bottom">
@@ -11,10 +13,12 @@ const DropdownMenu = () => {
                         menuItemsList.map((item, index) => {
                             return (
                                 <div className="dropdown-items" key={index}>
-                                    <div>
-                                        <span>{item.icon}</span>
-                                        {item.title}
-                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span>{item.icon}</span>
+                                            {item.title}
+                                        </li>
+                                    </ul>
                                 </div>
                             )
                         })
