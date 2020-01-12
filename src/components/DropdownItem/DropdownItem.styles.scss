@@ -6,36 +6,20 @@
   color: #fff;
   position: relative;
   .menu-item {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    cursor: pointer;
     border-bottom: 2px solid transparent;
     -webkit-transition: text-indent 0.15s, height 0.3s;
     -moz-transition:    text-indent 0.15s, height 0.3s;
     -o-transition:      text-indent 0.15s, height 0.3s;
     -ms-transition:     text-indent 0.15s, height 0.3s;
     transition:         text-indent 0.15s, height 0.3s;
-    position: relative;
     .icons{
       display: flex;
-    }
-    .toggle-icon{
-      cursor: pointer;
-      width: 30px;
-      height: 30px;
-      align-items: center;
-      justify-content: center;
-      -webkit-transition: all 0.2s ease-out;
-      -moz-transition:    all 0.2s ease-out;
-      -o-transition:      all 0.2s ease-out;
-      -ms-transition:     all 0.2s ease-out;
-      transition:         all 0.2s ease-out;
-      border-radius: 50%;
-      &:hover{
-
-        background-color: hsla(0,0%,100%,.15);
-      }
     }
     h2 {
       color: #eff4fa;
