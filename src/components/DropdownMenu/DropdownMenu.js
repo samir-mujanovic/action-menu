@@ -21,7 +21,6 @@ const DropdownMenu = () => {
                                     )
                                 })
                             }
-
                         </ul>
                     </div>
                     <div ref={arrowProps.ref} style={arrowProps.style}/>
