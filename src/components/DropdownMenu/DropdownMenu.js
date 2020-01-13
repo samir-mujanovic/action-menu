@@ -9,20 +9,21 @@ const DropdownMenu = () => {
         <Popper placement="bottom">
             {({ref, style, placement, arrowProps}) => (
                 <div className="dropdown-menu" ref={ref} style={style} data-placement={placement}>
-                    {
-                        menuItemsList.map((item, index) => {
-                            return (
-                                <div className="dropdown-items" key={index}>
-                                    <ul>
-                                        <li>
+                    <div className="dropdown-items">
+                        <ul>
+                            {
+                                menuItemsList.map((item, index) => {
+                                    return (
+                                        <li  key={index}>
                                             <span>{item.icon}</span>
                                             {item.title}
                                         </li>
-                                    </ul>
-                                </div>
-                            )
-                        })
-                    }
+                                    )
+                                })
+                            }
+
+                        </ul>
+                    </div>
                     <div ref={arrowProps.ref} style={arrowProps.style}/>
                 </div>
             )}
